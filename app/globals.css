@@ -13,6 +13,13 @@
 }
 
 @font-face {
+  font-family: "HankenGrotesk-Bold";
+  src: url("/fonts/hanken_grotesk/HankenGrotesk-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "HankenGrotesk-Medium";
   src: url("/fonts/hanken_grotesk/HankenGrotesk-Medium.ttf") format("truetype");
   font-weight: normal;
@@ -29,6 +36,7 @@
   --color-purple-light: #930fe4;
   --color-purple-light-translucent: #930fe4ee;
   --color-white-standard: #fff;
+  --color-white-80: rgba(255, 255, 255, 0.8);
   --color-white-60: rgba(255, 255, 255, 0.6);
   --color-white-20: rgba(255, 255, 255, 0.2);
   --color-mint-standard: #5de995;
@@ -37,6 +45,7 @@
   /* Fonts */
   --font-title-800: "Rubik-ExtraBold";
   --font-title-700: "Rubik-SemiBold";
+  --font-content-800: "HankenGrotesk-Bold";
   --font-content-500: "HankenGrotesk-Medium";
 
   /* Dimensions */

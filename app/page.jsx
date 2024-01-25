@@ -17,9 +17,9 @@ export default function Home() {
           <Heading>My stories</Heading>
         </HBox>
         <TabContainer active={0}>
-          <Tab>
+          <Tab active={true}>
             Stories
-            <Quantity defaultValue={3} />
+            <Quantity active={true} defaultValue={3} />
           </Tab>
           <Tab>
             Profiles
