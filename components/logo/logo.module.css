@@ -2,4 +2,6 @@
   background-image: url("/media/logo.svg");
   width: 2.6875rem;
   height: 1.9375rem;
+  min-width: 2.6875rem;
+  min-height: 1.9375rem;
 }

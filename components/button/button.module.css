@@ -1,2 +1,27 @@
 .button {
+  background: transparent;
+  border: var(--dim-border-size) var(--color-white-10) solid;
+  color: var(--color-white-standard);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-content-700);
+  font-size: 1rem;
+  border-radius: var(--dim-border-radius-small);
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover:not(.primary) {
+  background-color: var(--color-white-10);
+}
+
+.primary:hover {
+  background-color: var(--color-white-80);
+}
+
+.primary {
+  background: var(--color-white-standard);
+  color: var(--color-brand-primary);
 }

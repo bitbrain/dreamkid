@@ -6,6 +6,7 @@ import Tab from "@/components/tab/tab";
 import VSeparator from "@/components/vseparator/vseparator";
 import styles from "./page.module.css";
 import HBox from "@/components/hbox/hbox";
+import Button from "@/components/button/button";
 
 export default function Home() {
   return (
@@ -31,7 +32,12 @@ export default function Home() {
           </Tab>
         </TabContainer>
       </div>
-      <div className={styles.content}>Content goes here</div>
+      <div className={styles.content}>
+        <div className={styles.actionButtons}>
+          <Button primary={true}>Create new story</Button>
+          <Button>Create new profile</Button>
+        </div>
+      </div>
     </div>
   );
 }

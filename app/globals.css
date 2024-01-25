@@ -20,6 +20,14 @@
 }
 
 @font-face {
+  font-family: "HankenGrotesk-SemiBold";
+  src: url("/fonts/hanken_grotesk/HankenGrotesk-SemiBold.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "HankenGrotesk-Medium";
   src: url("/fonts/hanken_grotesk/HankenGrotesk-Medium.ttf") format("truetype");
   font-weight: normal;
@@ -39,18 +47,24 @@
   --color-white-80: rgba(255, 255, 255, 0.8);
   --color-white-60: rgba(255, 255, 255, 0.6);
   --color-white-20: rgba(255, 255, 255, 0.2);
+  --color-white-10: rgba(255, 255, 255, 0.1);
   --color-mint-standard: #5de995;
   --color-mint-dark: #0f6c34;
+
+  /* Branding */
+  --color-brand-primary: var(--color-purple-standard);
+  --color-brand-secondary: var(--color-mint-standard);
 
   /* Fonts */
   --font-title-800: "Rubik-ExtraBold";
   --font-title-700: "Rubik-SemiBold";
   --font-content-800: "HankenGrotesk-Bold";
+  --font-content-700: "HankenGrotesk-SemiBold";
   --font-content-500: "HankenGrotesk-Medium";
 
   /* Dimensions */
-  --dim-border-size: 1px;
-  --dim-border-active-size: 2px;
+  --dim-border-size: 0.08rem;
+  --dim-border-active-size: 0.16rem;
 
   --dim-padding-default: 0.5rem;
   --dim-border-radius-large: 1rem;
@@ -62,6 +76,8 @@
   --dim-padding-main-top: 3.5rem;
 
   --dim-font-size-heading: 3rem;
+
+  --dim-icon-size: 1.25rem;
 }
 
 body {

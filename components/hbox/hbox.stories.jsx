@@ -6,9 +6,12 @@ export default {
   component: HBox,
 };
 
-const Template = (args) => <HBox {...args} />;
+const Template = (args) => (
+  <HBox>
+    <div>Element 1</div>
+    <div>Element 2</div>
+    <div>Element 3</div>
+  </HBox>
+);
 
 export const Default = Template.bind({});
-Default.args = {
-  children: "Hello World",
-};

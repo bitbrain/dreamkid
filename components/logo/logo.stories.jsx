@@ -6,9 +6,6 @@ export default {
   component: Logo,
 };
 
-const Template = (args) => <Logo {...args} />;
+const Template = (args) => <Logo />;
 
 export const Default = Template.bind({});
-Default.args = {
-  children: "Dream Kid",
-};

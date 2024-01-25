@@ -6,9 +6,10 @@ export default {
   component: Heading,
 };
 
-const Template = (args) => <Heading {...args} />;
+const Template = (args) => <Heading>{args.text}</Heading>;
 
 export const Default = Template.bind({});
+
 Default.args = {
-  children: "Hello World",
+  text: "Hello World!",
 };

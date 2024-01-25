@@ -1,14 +1,22 @@
 .main {
-  padding: calc(var(--dim-padding-main-top)) var(--dim-padding-main) 0
-    var(--dim-padding-main);
 }
 
 .header {
+  padding: calc(var(--dim-padding-main-top)) var(--dim-padding-main) 0
+    var(--dim-padding-main);
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  box-shadow: inset 0 calc(var(--dim-border-size) * -1) 0 var(--color-white-10);
 }
 
 .content {
   margin-top: 1.5rem;
+  padding: 0 var(--dim-padding-main) 0 var(--dim-padding-main);
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
 }

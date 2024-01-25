@@ -10,5 +10,11 @@ const Template = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  children: "Example Button",
+  children: "Default Button",
+};
+
+export const Primary = Template.bind({});
+Primary.args = {
+  primary: true,
+  children: "Primary Button",
 };

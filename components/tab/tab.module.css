@@ -1,5 +1,5 @@
 .tab {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-variant-caps: all-petite-caps;
   letter-spacing: 0.07rem;
@@ -7,6 +7,15 @@
   padding-bottom: 0.75rem;
   gap: 0.25rem;
   border-bottom: var(--dim-border-active-size) rgba(0, 0, 0, 0) solid;
+  transition: color ease 0.3s;
+}
+
+.tab:hover:not(.active) {
+  color: var(--color-white-standard);
+}
+
+.tab:hover {
+  cursor: pointer;
 }
 
 .active {

@@ -6,9 +6,18 @@ export default {
   component: Quantity,
 };
 
-const Template = (args) => <Quantity {...args} />;
+const Template = (args) => (
+  <Quantity active={args.active} defaultValue={args.number} />
+);
 
 export const Default = Template.bind({});
 Default.args = {
-  children: "Hello World",
+  number: 13,
+  active: false,
+};
+
+export const Active = Template.bind({});
+Active.args = {
+  number: 13,
+  active: true,
 };
