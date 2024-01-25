@@ -82,6 +82,11 @@
     var(--color-purple-light-translucent) 7.55%,
     var(--color-purple-dark-translucent) 71.48%
   );
+  --style-fancy-box-shadow: 0px 9px 19px 0px rgba(20, 3, 43, 0.2),
+    0px 34px 34px 0px rgba(20, 3, 43, 0.17),
+    0px 78px 47px 0px rgba(20, 3, 43, 0.1),
+    0px 138px 55px 0px rgba(20, 3, 43, 0.03),
+    0px 215px 60px 0px rgba(20, 3, 43, 0);
 }
 
 body {

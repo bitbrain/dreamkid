@@ -17,7 +17,6 @@ import {
 } from "@/data/stories";
 
 export default function Home() {
-  const allStories = [TimelessPalaceStory, PirateBayStory, CountrySideStory];
   return (
     <div className={styles.main}>
       <div className={styles.header}>
@@ -50,9 +49,9 @@ export default function Home() {
           </Button>
         </div>
         <Carousel>
-          {allStories.map((story) => (
-            <InteractiveStory key={story.id} story={story} />
-          ))}
+          <InteractiveStory story={TimelessPalaceStory} />
+          <InteractiveStory active={true} story={PirateBayStory} />
+          <InteractiveStory story={CountrySideStory} />
         </Carousel>
       </div>
     </div>

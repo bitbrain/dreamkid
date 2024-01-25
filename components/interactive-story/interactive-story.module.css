@@ -1,5 +1,48 @@
 .interactiveStory {
+  opacity: 50%;
 }
 
 .active {
+  opacity: 100%;
+}
+
+.active > img {
+  /* FIXME: this needs to be inset and is currently not according to design. */
+  border: 0.05rem solid rgba(255, 255, 255, 0.24);
+  box-shadow: var(--style-fancy-box-shadow);
+  border-radius: var(--dim-border-radius-large);
+  width: 32rem;
+  height: 24rem;
+}
+
+.image {
+  width: 15rem;
+  height: 20rem;
+  border-radius: var(--dim-border-radius-smaller);
+}
+
+.actionButtons {
+  display: inline-flex;
+  margin-top: 0.5rem;
+  gap: 1.5rem;
+}
+
+.actionButtons > * {
+  border: none;
+  background: none;
+  font-size: 1rem;
+  padding: 0;
+  transition: none;
+}
+
+.actionButtons > *:hover {
+  background: none !important;
+}
+
+.title {
+  margin-top: 0.75rem !important;
+}
+
+.description {
+  margin: 0.5rem 0 !important;
 }
