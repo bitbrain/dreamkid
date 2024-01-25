@@ -14,3 +14,11 @@
 
 - 12px radius
 - 2px highlight size
+
+## Components
+
+For a detailed overview of available components, run:
+
+```bash
+
+```
