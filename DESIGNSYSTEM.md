@@ -20,5 +20,5 @@
 For a detailed overview of available components, run:
 
 ```bash
-
+npm run storybook
 ```
