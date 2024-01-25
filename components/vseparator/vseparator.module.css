@@ -1,0 +1,9 @@
+.vseparator {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* ensure we only show the separator when it is not the last element */
+.vseparator > *:not(:last-child) {
+  border-right: 1px white;
+}

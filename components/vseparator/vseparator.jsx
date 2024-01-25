@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./vseparator.module.css";
-import classNames from "classnames";
 
-function VSeparator() {
-  return <div className={classNames(styles.className)}></div>;
+function VSeparator({ children }) {
+  return <div className={styles.className}>{children}</div>;
 }
 
 export default VSeparator;

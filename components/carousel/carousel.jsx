@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./carousel.module.css";
 import classNames from "classnames";
 
-function Carousel() {
-  return <div className={classNames(styles.className)}></div>;
+function Carousel({ className, children }) {
+  return (
+    <div className={classNames(styles.className, className)}>{children}</div>
+  );
 }
 
 export default Carousel;

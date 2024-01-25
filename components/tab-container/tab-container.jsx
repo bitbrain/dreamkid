@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./tab-container.module.css";
 import classNames from "classnames";
 
-function TabContainer() {
-  return <div className={classNames(styles.className)}></div>;
+function TabContainer({ className, children }) {
+  return (
+    <div className={classNames(styles.className, className)}>{children}</div>
+  );
 }
 
 export default TabContainer;
