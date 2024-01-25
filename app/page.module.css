@@ -1,0 +1,4 @@
+.main {
+  padding: calc(var(--dim-padding-main-top)) var(--dim-padding-main) 0
+    var(--dim-padding-main);
+}

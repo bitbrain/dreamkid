@@ -4,28 +4,31 @@ import Quantity from "@/components/quantity/quantity";
 import TabContainer from "@/components/tab-container/tab-container";
 import Tab from "@/components/tab/tab";
 import VSeparator from "@/components/vseparator/vseparator";
+import styles from "./page.module.css";
+import HBox from "@/components/hbox/hbox";
 
 export default function Home() {
   return (
-    <div>
-      <VSeparator>
-        <Logo>Dream Kid</Logo>
+    <div className={styles.main}>
+      <HBox>
+        <Logo />
+        <VSeparator />
         <Heading>My stories</Heading>
-        <TabContainer active={0}>
-          <Tab>
-            Stories
-            <Quantity defaultValue={3} />
-          </Tab>
-          <Tab>
-            Profiles
-            <Quantity defaultValue={2} />
-          </Tab>
-          <Tab>
-            Stories
-            <Quantity defaultValue={0} />
-          </Tab>
-        </TabContainer>
-      </VSeparator>
+      </HBox>
+      <TabContainer active={0}>
+        <Tab>
+          Stories
+          <Quantity defaultValue={3} />
+        </Tab>
+        <Tab>
+          Profiles
+          <Quantity defaultValue={2} />
+        </Tab>
+        <Tab>
+          Stories
+          <Quantity defaultValue={0} />
+        </Tab>
+      </TabContainer>
     </div>
   );
 }

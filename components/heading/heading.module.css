@@ -1,0 +1,5 @@
+.heading {
+  font-family: var(--font-title-800);
+  font-size: var(--dim-font-size-heading);
+  line-height: 0px;
+}

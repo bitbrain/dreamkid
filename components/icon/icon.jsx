@@ -3,7 +3,7 @@ import styles from "./icon.module.css";
 import classNames from "classnames";
 
 function Icon({ className }) {
-  return <div className={classNames(styles.className, className)}></div>;
+  return <div className={classNames(styles.icon, className)}></div>;
 }
 
 export default Icon;

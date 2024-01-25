@@ -4,9 +4,7 @@ import classNames from "classnames";
 
 function Quantity({ className, defaultValue }) {
   return (
-    <div className={classNames(styles.className, className)}>
-      {defaultValue}
-    </div>
+    <div className={classNames(styles.quantity, className)}>{defaultValue}</div>
   );
 }
 

@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 function HScroll({ className, children }) {
   return (
-    <div className={classNames(styles.className, className)}>{children}</div>
+    <div className={classNames(styles.hscroll, className)}>{children}</div>
   );
 }
 

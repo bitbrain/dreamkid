@@ -4,9 +4,7 @@ import classNames from "classnames";
 
 function Button({ className, children }) {
   return (
-    <button className={classNames(styles.className, className)}>
-      {children}
-    </button>
+    <button className={classNames(styles.button, className)}>{children}</button>
   );
 }
 

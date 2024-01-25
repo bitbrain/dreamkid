@@ -29,8 +29,8 @@
   --color-purple-light: #930fe4;
   --color-purple-light-translucent: #930fe4ee;
   --color-white-standard: #fff;
-  --color-white-60: rgba(var(--color-white-standard), 0.6);
-  --color-white-20: rgba(var(--color-white-standard), 0.2);
+  --color-white-60: rgba(255, 255, 255, 0.6);
+  --color-white-20: rgba(255, 255, 255, 0.2);
   --color-mint-standard: #5de995;
   --color-mint-dark: #0f6c34;
 
@@ -47,6 +47,12 @@
   --dim-border-radius-large: 1rem;
   --dim-border-radius-smaller: 0.75rem;
   --dim-border-radius-small: 0.5rem;
+  --dim-margin-content: 2rem;
+
+  --dim-padding-main: 4rem;
+  --dim-padding-main-top: 3.5rem;
+
+  --dim-font-size-heading: 3rem;
 }
 
 body {
@@ -59,7 +65,7 @@ body {
     url("/media/splash.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: center right;
   margin: 0;
   height: 100vh;
   width: 100vw;
