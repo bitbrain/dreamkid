@@ -1,4 +1,6 @@
 .button {
+  display: flex;
+  gap: 0.5rem;
   background: transparent;
   border: var(--dim-border-size) var(--color-white-10) solid;
   color: var(--color-white-standard);

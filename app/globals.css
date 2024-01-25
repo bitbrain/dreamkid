@@ -65,29 +65,29 @@
   /* Dimensions */
   --dim-border-size: 0.08rem;
   --dim-border-active-size: 0.16rem;
-
   --dim-padding-default: 0.5rem;
   --dim-border-radius-large: 1rem;
   --dim-border-radius-smaller: 0.75rem;
   --dim-border-radius-small: 0.5rem;
   --dim-margin-content: 2rem;
-
   --dim-padding-main: 4rem;
   --dim-padding-main-top: 3.5rem;
-
   --dim-font-size-heading: 3rem;
-
   --dim-icon-size: 1.25rem;
+
+  /* Other styles */
+  --style-background-gradient-radius: 198deg;
+  --style-background-gradient: linear-gradient(
+    var(--style-background-gradient-radius),
+    var(--color-purple-light-translucent) 7.55%,
+    var(--color-purple-dark-translucent) 71.48%
+  );
 }
 
 body {
   background-color: var(--color-white-standard);
-  background-image: linear-gradient(
-      198deg,
-      var(--color-purple-light-translucent) 7.55%,
-      var(--color-purple-dark-translucent) 71.48%
-    ),
-    url("/media/splash.png");
+  background-image: url("/media/filler.svg"), var(--style-background-gradient),
+    /*TODO: fix incorrect position of this */ url("/media/splash.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;

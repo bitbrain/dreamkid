@@ -1,2 +1,6 @@
 .carousel {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  width: 100%;
 }

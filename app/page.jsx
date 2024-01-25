@@ -7,8 +7,17 @@ import VSeparator from "@/components/vseparator/vseparator";
 import styles from "./page.module.css";
 import HBox from "@/components/hbox/hbox";
 import Button from "@/components/button/button";
+import Icon from "@/components/icon/icon";
+import Carousel from "@/components/carousel/carousel";
+import InteractiveStory from "@/components/interactive-story/interactive-story";
+import {
+  CountrySideStory,
+  PirateBayStory,
+  TimelessPalaceStory,
+} from "@/data/stories";
 
 export default function Home() {
+  const allStories = [TimelessPalaceStory, PirateBayStory, CountrySideStory];
   return (
     <div className={styles.main}>
       <div className={styles.header}>
@@ -27,7 +36,7 @@ export default function Home() {
             <Quantity defaultValue={2} />
           </Tab>
           <Tab>
-            Stories
+            Achived
             <Quantity defaultValue={0} />
           </Tab>
         </TabContainer>
@@ -35,8 +44,16 @@ export default function Home() {
       <div className={styles.content}>
         <div className={styles.actionButtons}>
           <Button primary={true}>Create new story</Button>
-          <Button>Create new profile</Button>
+          <Button>
+            <Icon src={"/icons/group_add.svg"} alt={"Group add icon"} /> Create
+            new profile
+          </Button>
         </div>
+        <Carousel>
+          {allStories.map((story) => (
+            <InteractiveStory key={story.id} story={story} />
+          ))}
+        </Carousel>
       </div>
     </div>
   );
