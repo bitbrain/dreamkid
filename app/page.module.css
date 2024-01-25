@@ -2,3 +2,13 @@
   padding: calc(var(--dim-padding-main-top)) var(--dim-padding-main) 0
     var(--dim-padding-main);
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content {
+  margin-top: 1.5rem;
+}

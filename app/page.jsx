@@ -10,25 +10,28 @@ import HBox from "@/components/hbox/hbox";
 export default function Home() {
   return (
     <div className={styles.main}>
-      <HBox>
-        <Logo />
-        <VSeparator />
-        <Heading>My stories</Heading>
-      </HBox>
-      <TabContainer active={0}>
-        <Tab>
-          Stories
-          <Quantity defaultValue={3} />
-        </Tab>
-        <Tab>
-          Profiles
-          <Quantity defaultValue={2} />
-        </Tab>
-        <Tab>
-          Stories
-          <Quantity defaultValue={0} />
-        </Tab>
-      </TabContainer>
+      <div className={styles.header}>
+        <HBox>
+          <Logo />
+          <VSeparator />
+          <Heading>My stories</Heading>
+        </HBox>
+        <TabContainer active={0}>
+          <Tab>
+            Stories
+            <Quantity defaultValue={3} />
+          </Tab>
+          <Tab>
+            Profiles
+            <Quantity defaultValue={2} />
+          </Tab>
+          <Tab>
+            Stories
+            <Quantity defaultValue={0} />
+          </Tab>
+        </TabContainer>
+      </div>
+      <div className={styles.content}>Content goes here</div>
     </div>
   );
 }

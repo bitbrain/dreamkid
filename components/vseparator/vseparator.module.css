@@ -1,7 +1,6 @@
 .vseparator {
   height: 1.5rem;
   width: 0.125rem;
-  margin-left: 10px;
-  border-right: 2px var(--color-white-20) solid;
-  margin-right: 10px;
+  margin: 0 1rem;
+  border-right: var(--dim-border-active-size) var(--color-white-20) solid;
 }
