@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Rubik-ExtraBold";
+  src: url("/fonts/rubik/Rubik-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik-SemiBold";
+  src: url("/fonts/rubik/Rubik-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HankenGrotesk-Medium";
+  src: url("/fonts/hanken_grotesk/HankenGrotesk-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Colors */
+  --color-black-standard: #000;
+  --color-purple-standard: #5c0ee4;
+  --color-purple-dark: #6336b2;
+  --color-purple-dark-translucent: #6336b2ee;
+  --color-purple-darkest: #14032b;
+  --color-purple-light: #930fe4;
+  --color-purple-light-translucent: #930fe4ee;
+  --color-white-standard: #fff;
+  --color-white-60: rgba(var(--color-white-standard), 0.6);
+  --color-white-20: rgba(var(--color-white-standard), 0.2);
+  --color-mint-standard: #5de995;
+  --color-mint-dark: #0f6c34;
+
+  /* Fonts */
+  --font-title-800: "Rubik-ExtraBold";
+  --font-title-700: "Rubik-SemiBold";
+  --font-content-500: "HankenGrotesk-Medium";
+
+  /* Dimensions */
+  --dim-border-size: 1px;
+  --dim-border-active-size: 2px;
+
+  --dim-padding-default: 0.5rem;
+  --dim-border-radius-large: 1rem;
+  --dim-border-radius-smaller: 0.75rem;
+  --dim-border-radius-small: 0.5rem;
+}
+
+body {
+  background-color: var(--color-white-standard);
+  background-image: linear-gradient(
+      198deg,
+      var(--color-purple-light-translucent) 7.55%,
+      var(--color-purple-dark-translucent) 71.48%
+    ),
+    url("/media/splash.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  color: var(--color-white-standard);
+  font-family: var(--font-content-500);
+}
