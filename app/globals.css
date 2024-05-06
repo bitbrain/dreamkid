@@ -92,13 +92,13 @@
 body {
   background-color: var(--color-white-standard);
   background-image: url("/media/filler.svg"), var(--style-background-gradient),
-    /*TODO: fix incorrect position of this */ url("/media/splash.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center right;
+    url("/media/splash.png");
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center center, center left, center right;
   margin: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100dvh;
+  width: 100%;
   color: var(--color-white-standard);
   font-family: var(--font-content-500);
 }

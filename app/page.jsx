@@ -14,6 +14,8 @@ import {
   CountrySideStory,
   PirateBayStory,
   TimelessPalaceStory,
+  FirstStory,
+  SomeOtherStory,
 } from "@/data/stories";
 
 export default function Home() {
@@ -49,9 +51,11 @@ export default function Home() {
           </Button>
         </div>
         <Carousel>
+          <InteractiveStory story={FirstStory} />
           <InteractiveStory story={TimelessPalaceStory} />
-          <InteractiveStory active={true} story={PirateBayStory} />
+          <InteractiveStory story={PirateBayStory} />
           <InteractiveStory story={CountrySideStory} />
+          <InteractiveStory story={SomeOtherStory} />
         </Carousel>
       </div>
     </div>

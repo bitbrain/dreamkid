@@ -1,5 +1,31 @@
 .carousel {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  overflow: visible;
+}
+
+.wrapper {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: thin; /* For Firefox */
+  width: 100%;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.wrapper > * {
+  scroll-snap-align: center;
+  justify-content: center;
+  align-items: center;
 }

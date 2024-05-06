@@ -1,14 +1,28 @@
 .interactiveStory {
   opacity: 50%;
+  transition: scale 100ms ease-in-out;
 }
 
-.active {
+.interactiveStory:hover {
+  scale: 1.1;
+}
+
+.interactiveStory > img {
+  object-fit: cover;
+  transition: width 200ms ease-in-out, height 200ms ease-in-out,
+    box-shadow 200ms ease-in-out, border-raius 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+}
+
+.active,
+.interactiveStory:hover {
   opacity: 100%;
 }
 
-.active > img {
+.active > img,
+.interactiveStory:hover > img {
   /* FIXME: this needs to be inset and is currently not according to design. */
-  border: 0.05rem solid rgba(255, 255, 255, 0.24);
+  border: 0.1rem solid rgba(255, 255, 255, 0.24);
   box-shadow: var(--style-fancy-box-shadow);
   border-radius: var(--dim-border-radius-large);
   width: 32rem;
